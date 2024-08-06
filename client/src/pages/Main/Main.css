@@ -55,7 +55,7 @@ span#logo {
 
 .ui.container{
     width: 40%;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 
 .ui.container p {
