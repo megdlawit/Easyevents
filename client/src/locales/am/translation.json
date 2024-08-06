@@ -13,6 +13,14 @@
     "registrationSuccessful": "የተመዘገበ ሂደት ተሳክቷል",
     "registrationFailed": "የተመዘገበ ሂደት አልተሳካም",
     "registrationSuccessMessage": "በትክክል ተመዝግበዋል!",
-    "registrationFailMessage": "የተመዘገበ ሂደት አልተሳካም፣ እባኮትን ድጋፍ ያድርጉ።"
+    "registrationFailMessage": "የተመዘገበ ሂደት አልተሳካም፣ እባኮትን ድጋፍ ያድርጉ።",
+      "eventAttendees": "የተጠቃሚ ዝርዝር",
+      "follower": "ተከታታይ",
+      "lead": "መሪ",
+      "fullFestivalPass": "ሙሉ በሙሉ የፌስቲቫል ፓስ",
+      "phone": "ስልክ",
+      "otherDescription": "እንዴት ይገልጹ",
+      "noResults": "ምንም ውጤት አልተገኘም"
+  
   }
   

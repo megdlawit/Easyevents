@@ -26,9 +26,12 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "i18next": "^23.12.2",
     "mysql2": "^1.7.0",
+    "react-i18next": "^15.0.0",
     "sequelize": "^4.44.4",
     "socket.io": "^2.5.0",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "timers-browserify": "^2.0.12"
   }
 }

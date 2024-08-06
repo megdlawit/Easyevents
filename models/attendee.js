@@ -25,6 +25,11 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
             validate: { len: [1, 50] }
         },
+        phoneNumber: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: { len: [1, 20] }
+        },
         uuid: {
             type: DataTypes.UUID,
             defaultValue: DataTypes.UUIDV1,

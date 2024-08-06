@@ -13,6 +13,14 @@
     "registrationSuccessful": "Registration Successful",
     "registrationFailed": "Registration Failed",
     "registrationSuccessMessage": "You have been registered successfully!",
-    "registrationFailMessage": "Registration failed, please try again."
+    "registrationFailMessage": "Registration failed, please try again.",
+    "eventAttendees": "Event Attendees",
+    "follower": "Follower",
+    "lead": "Lead",
+    "fullFestivalPass": "Full Festival Pass",
+    "phone": "Phone",
+    "otherDescription": "Other Description",
+    "noResults": "No Results to Display"
   }
+  
   
