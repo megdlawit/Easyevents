@@ -45,12 +45,12 @@ const FirstRegistration = () => {
     }
 
     const options = [
-        { key: 'poetry', text: 'ቅኔ', value: 'Poetry' },
-        { key: 'short_story', text: 'አነስ ተረት እና አሰሳ', value: 'Short Story and Essay' },
-        { key: 'short_film', text: 'አነስ ፊልም', value: 'Short Film' },
-        { key: 'music_dance', text: 'ሙዚቃ እና ዳንስ', value: 'Music and Dance' },
-        { key: 'painting_digital', text: 'ስዕል እና ዲጂታል አርት', value: 'Painting and Digital Art' },
-        { key: 'other', text: 'ሌላ', value: 'Other' }
+        { key: 'poetry', text: i18n.language === 'am' ? 'ቅኔ' : 'Poetry', value: 'Poetry' },
+        { key: 'short_story', text: i18n.language === 'am' ? 'አነስ ተረት እና አሰሳ' : 'Short Story and Essay', value: 'Short Story and Essay' },
+        { key: 'short_film', text: i18n.language === 'am' ? 'አነስ ፊልም' : 'Short Film', value: 'Short Film' },
+        { key: 'music_dance', text: i18n.language === 'am' ? 'ሙዚቃ እና ዳንስ' : 'Music and Dance', value: 'Music and Dance' },
+        { key: 'painting_digital', text: i18n.language === 'am' ? 'ስዕል እና ዲጂታል አርት' : 'Painting and Digital Art', value: 'Painting and Digital Art' },
+        { key: 'other', text: i18n.language === 'am' ? 'ሌላ' : 'Other', value: 'Other' }
     ];
 
     return (

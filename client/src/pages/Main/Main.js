@@ -37,31 +37,31 @@ class Main extends Component {
             vertical
             inverted
           >
-            <Menu.Item as={NavLink} to="/home" name="home">
+            <Menu.Item as={NavLink} to="/admin/home" name="home">
               <Icon name="home" />
               Home
             </Menu.Item>
-            <Menu.Item as={NavLink} to="/event/attendees" name="attendees">
+            <Menu.Item as={NavLink} to="/admin/attendees" name="attendees">
               <Icon name="users" />
               Attendees
             </Menu.Item>
-            <Menu.Item as={NavLink} to="/event/badgegeneration" name="badge-generation">
+            <Menu.Item as={NavLink} to="/admin/badgegeneration" name="badge-generation">
               <Icon name="qrcode" />
               Badges
             </Menu.Item>
-            <Menu.Item as={NavLink} to="/event/workshops" name="workshops">
+            <Menu.Item as={NavLink} to="/admin/workshops" name="workshops">
               <Icon name="magic" />
               Workshops
             </Menu.Item>
-            <Menu.Item as={NavLink} to="/event/registration" name="registration">
+            <Menu.Item as={NavLink} to="/admin/registration" name="registration">
               <Icon name="pencil" />
               Registration
             </Menu.Item>
-            <Menu.Item as={NavLink} to="/event/firstregistration" name="firstregistration">
+            <Menu.Item as={NavLink} to="/admin/firstregistration" name="firstregistration">
               <Icon name="checkmark" />
               First Registration
             </Menu.Item>
-            <Menu.Item as={NavLink} to="/event/checkin" name="check-in">
+            <Menu.Item as={NavLink} to="/admin/checkin" name="check-in">
               <Icon name="checkmark" />
               Check-In
             </Menu.Item>
