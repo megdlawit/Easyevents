@@ -20,7 +20,7 @@ import Footer from './pages/Footer';
 const App = () => (
   <Router>
     <Routes>
-      <Route path="/" element={<Main />}>
+      <Route path="/admin" element={<Main />}>
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
         <Route path="event/attendees" element={<Attendees />} />
@@ -30,7 +30,7 @@ const App = () => (
         <Route path="event/registration" element={<Registration />} />
         <Route path="event/checkin" element={<CheckIn />} />
       </Route>
-      <Route path="/event/landingpage" element={<LandingPage />} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="event/firstregistration" element={<FirstRegistration />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/navbar" element={<Navbar />} />
