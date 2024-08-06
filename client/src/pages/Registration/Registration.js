@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import QrReader from "react-qr-reader";
 import API from "../../utils/API";
-import {setTimeout} from "timers";
+import { setTimeout } from 'timers-browserify';
 import {Container, Header, Grid, Modal, Button} from 'semantic-ui-react'
 import '../Main/Main.css'
 

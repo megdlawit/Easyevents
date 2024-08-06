@@ -1,0 +1,18 @@
+{
+    "registerForEvent": "Register for Event",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "city": "City",
+    "currentAddress": "Current Address",
+    "email": "Email",
+    "artForm": "Art Form",
+    "selectArtForm": "Select your art form",
+    "describeArtForm": "Describe your art form",
+    "register": "Register",
+    "registrationSuccessful": "Registration Successful",
+    "registrationFailed": "Registration Failed",
+    "registrationSuccessMessage": "You have been registered successfully!",
+    "registrationFailMessage": "Registration failed, please try again."
+  }
+  

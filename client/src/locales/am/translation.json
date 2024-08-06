@@ -1,0 +1,18 @@
+{
+    "registerForEvent": "እቅድ ለእርስዎ መዝግብ",
+    "firstName": "የመጀመሪያ ስም",
+    "lastName": "የአምስተኛ ስም",
+    "phoneNumber": "ስልክ ቁጥር",
+    "city": "ከተማ",
+    "currentAddress": "አሁን አድራሻ",
+    "email": "ኢሜይል",
+    "artForm": "የአርት ቅርጸ ተዋውያን",
+    "selectArtForm": "የአርት ቅርጸ ተዋውያን ይምረጡ",
+    "describeArtForm": "የአርት ቅርጸ ተዋውያንን እንዴት ይገልጹ",
+    "register": "ይመዝግቡ",
+    "registrationSuccessful": "የተመዘገበ ሂደት ተሳክቷል",
+    "registrationFailed": "የተመዘገበ ሂደት አልተሳካም",
+    "registrationSuccessMessage": "በትክክል ተመዝግበዋል!",
+    "registrationFailMessage": "የተመዘገበ ሂደት አልተሳካም፣ እባኮትን ድጋፍ ያድርጉ።"
+  }
+  

@@ -22,6 +22,8 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    fallback: {
+      "timers": require.resolve("timers-browserify")
+    }
   }
 };

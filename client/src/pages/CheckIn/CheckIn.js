@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import QrReader from "react-qr-reader";
 import API from "../../utils/API";
-import {setTimeout} from "timers";
+import { setTimeout } from 'timers-browserify';
+
 import {
     Container,
     Dropdown,
