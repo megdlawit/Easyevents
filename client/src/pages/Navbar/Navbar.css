@@ -1,0 +1,116 @@
+.navbar-container * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container ul {
+  list-style: none;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: #333; /* Changed to a darker shade for better contrast */
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Navbar */
+.navbar-container .navbar {
+  background-color: #f8f9fa; /* Changed to a lighter shade for a fresh look */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  min-height: 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  border-bottom: 2px solid #eaeaea; /* Added bottom border */
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Fix the navbar to the top */
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Logo */
+.navbar-container .logo {
+  font-size: 32px; /* Slightly larger font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font family */
+  color: #341c02; /* Logo color */
+  font-weight: bold;
+}
+
+/* NavMenu */
+.navbar-container .navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* Adjusted gap */
+}
+
+.navbar-container .navLink {
+  padding: 8px 12px; /* Added padding */
+  border-radius: 4px; /* Added border radius */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container .navLink:hover {
+  background-color: #341c02; /* Add hover effect for nav links */
+  color: white;
+}
+
+/* Hamburger */
+.navbar-container .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-container .bar {
+  background-color: #333; /* Changed bar color */
+  width: 25px;
+  height: 3px;
+  display: block;
+  margin: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-container .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-container .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-container .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+  .navbar-container .hamburger {
+    display: block;
+  }
+
+  .navbar-container .navMenu {
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    top: 70px;
+    left: -100%;
+    text-align: start;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    background-color: #f8f9fa; /* Match the navbar color */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+
+  .navbar-container .navMenu.active {
+    left: 0;
+  }
+
+  .navbar-container .navMenu li {
+    margin: 16px 0;
+  }
+}

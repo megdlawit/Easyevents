@@ -1,0 +1,63 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .programs-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #4D1836;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .programs-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .program-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .program-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .program-title {
+    font-size: 1.5rem;
+    color: #4D1836;
+    margin-bottom: 10px;
+  }
+  
+  .program-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .program-date,
+  .program-time {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  

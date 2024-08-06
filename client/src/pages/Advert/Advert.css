@@ -1,0 +1,60 @@
+.advert-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .advert-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 1300px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .advert-banner-info {
+    color: #4D1836;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .advert-banner-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .advert-banner-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .advert-banner-link {
+    font-size: 16px; /* Slightly reduced font size */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #4D1836;
+    padding: 8px 5px; /* Reduced padding to make the button smaller */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .advert-banner-link:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .advert-banner-logo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-left: 40px;
+  }
