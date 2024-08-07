@@ -17,6 +17,7 @@ import Participants from './pages/Participants';
 import Advert from './pages/Advert';
 import Footer from './pages/Footer';
 import Landing from './Landing/Home'
+import About from './pages/About/About';
 
 const App = () => (
   <Router>
@@ -39,6 +40,7 @@ const App = () => (
       <Route path="/participants" element={<Participants />} />
       <Route path="/advert" element={<Advert />} />
       <Route path="/footer" element={<Footer />} />
+      <Route path="/About" element={<About />} />
     </Routes>
   </Router>
 );

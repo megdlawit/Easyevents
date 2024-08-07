@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Container, List, Header, Label } from 'semantic-ui-react';
+import { Container, List, Header, Label, Input } from 'semantic-ui-react';
 import API from "../../utils/API";
 
 export default class Attendees extends Component {
     state = {
-        attendees: []
+        attendees: [],
+        searchQuery: ''
     }
 
     componentDidMount() {
@@ -21,8 +22,16 @@ export default class Attendees extends Component {
             .catch(err => console.log(err));
     }
 
+    handleSearchChange = (event) => {
+        this.setState({ searchQuery: event.target.value });
+    }
+
     attendeeRender() {
-        return this.state.attendees.map(attendee => (
+        const filteredAttendees = this.state.attendees.filter(attendee =>
+            `${attendee.firstName} ${attendee.lastName}`.toLowerCase().includes(this.state.searchQuery.toLowerCase())
+        );
+
+        return filteredAttendees.map(attendee => (
             <List.Item className='card' key={attendee.id}>
                 <List.Icon
                     name='checkmark'
@@ -38,7 +47,7 @@ export default class Attendees extends Component {
                         <List>
                             <List.Item
                                 icon='user'
-                                content={attendee.dancerType === "F" ? "Follower" : "Lead"}
+                                content={`${attendee.dancerType}`}
                             />
                             <List.Item
                                 icon='marker'
@@ -52,7 +61,6 @@ export default class Attendees extends Component {
                                 icon='qrcode'
                                 content='Full Festival Pass'
                             />
-                            {/* Additional details */}
                             {attendee.phoneNumber && (
                                 <List.Item
                                     icon='phone'
@@ -65,11 +73,6 @@ export default class Attendees extends Component {
                                     content={`Other Description: ${attendee.otherDescription}`}
                                 />
                             )}
-                            {/* <List.Item>
-                                <Label color='blue'>
-                                    Registration Date: {new Date(attendee.registrationDate).toLocaleDateString()}
-                                </Label>
-                            </List.Item> */}
                         </List>
                     </List.Description>
                 </List.Content>
@@ -83,6 +86,12 @@ export default class Attendees extends Component {
                 <Header as="h2" inverted>
                     Event Attendees
                 </Header>
+                <Input
+                    icon='search'
+                    placeholder='Search by name...'
+                    value={this.state.searchQuery}
+                    onChange={this.handleSearchChange}
+                />
                 {this.state.attendees.length ? (
                     <List divided inverted relaxed className='one-card'>
                         {this.attendeeRender()}
