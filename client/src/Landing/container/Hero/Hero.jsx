@@ -12,16 +12,18 @@ const Hero = () => {
     <div className="hero">
       <div className="row align-items-center">
         <div className="col-md-6 col-12">
-          <h1 className="title"> Navigating the digital landscape for success </h1>
-          <p className="py-4">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-          <button className="btn-positivus">Book a consultation</button>
+          <h1 className="title"> Whispers of Earth
+Arts Competition & Exhibition
+ </h1>
+          <p className="py-4">Win a trip to Baku, Azerbajan for COP29 or upto 100,000 ETB cash prize</p>
+          <button className="btn-positivus">Register</button>
         </div>
         <div className="col-md-6 col-12 mt-md-0 mt-4">
           <img className="img-fluid" src={images.hero} alt="design" />
         </div>
       </div>
       
-      <div className="clients">
+      {/* <div className="clients">
       {logos.map((logo, index) => (
       <img
         key={index}
@@ -30,7 +32,7 @@ const Hero = () => {
       />
     ))}
   
-      </div>
+      </div> */}
       <IconScroll />
     </div>
     

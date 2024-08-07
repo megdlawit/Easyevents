@@ -11,10 +11,10 @@ const App = () => (
     <Hero />
     <Services />
     <CTA />
-    <CaseStudies />
+    {/* <CaseStudies /> */}
     <Process />
-    <Team />
-    <Testimonials />
+    {/* <Team /> */}
+    {/* <Testimonials /> */}
     <Contact />
     <Footer />
   </div>

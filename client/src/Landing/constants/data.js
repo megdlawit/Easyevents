@@ -2,70 +2,74 @@ import images from './images';
 
 const Menu = [
     {
-        text: 'About us',
-        link: '#team',
+        text: 'About',
+        link: '#',
     },
     {
-        text: 'Services',
+        text: 'Call For Artists',
+        link: '#call',
+    },
+    {
+        text: 'Events',
         link: '#services',
     },
     {
-        text: 'Use Cases',
-        link: '#use-cases',
-    },
-    {
-        text: 'Process',
-        link: '#process',
+        text: 'Winners spotlight',
+        link: '#team',
     },
 
     {
-        text: 'Testimonials',
-        link: '#testimonials',
+        text: 'News & Media',
+        link: '#',
     },
     {
-        text: 'Request a quote',
-        link: '#quote',
+        text: 'Gallary',
+        link: '#',
+    },
+    {
+        text: 'Register',
+        link: '#',
     }
 ];
 const ServicesData = [
     {
-        titleone: 'Search engine',
-        titletwo: 'optimization',
+        titleone: 'Art ',
+        titletwo: 'Exhibition',
         link: '#',
         itemclass: 'blight',
         imgURL: images.services01,
     },
     {
-        titleone: 'Pay-per-click',
-        titletwo: 'advertising',
+        titleone: 'Art ',
+        titletwo: 'Workshops',
         link: '#',
         itemclass: 'bgreen',
         imgURL: images.services02,
     },
     {
-        titleone: 'Social Media',
-        titletwo: 'Marketing',
+        titleone: 'Panel ',
+        titletwo: 'Discussions',
         link: '#',
         itemclass: 'bdark',
         imgURL: images.services03,
     },
     {
-        titleone: 'Email',
-        titletwo: 'Marketing',
+        titleone: 'Live ',
+        titletwo: 'Performances',
         link: '#',
         itemclass: 'blight',
         imgURL: images.services04,
     },
     {
-        titleone: 'Content',
-        titletwo: 'Creation',
+        titleone: 'Awards ',
+        titletwo: 'Ceremony',
         link: '#',
         itemclass: 'bgreen',
         imgURL: images.services05,
     },
     {
-        titleone: 'Analytics and',
-        titletwo: 'Tracking',
+        titleone: 'Networking ',
+        titletwo: 'Sessions',
         link: '#',
         itemclass: 'bdark',
         imgURL: images.services06,
@@ -88,75 +92,67 @@ const CaseStudies = [
 
 const WorkingProcess = [
     {
-        title: 'Consultation',
-        description: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
+        title: 'Announcement and Call for Submissions (July 19, 2024) ',
+        description: 'The official announcement of the contest will be made. Artists are invited to participate, with the call for submissions publicized through various channels including our website, social media, press releases, and partner organizations.',
     },
     {
-        title: 'Research and Strategy Development',
-        description: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
+        title: 'Submission Period (July 20 - August 15, 2024)',
+        description: 'Artists have a two-week window to submit their entries. Visit our competition website to fill out the submission form, provide your contact information, a brief description of your artwork, and the chosen medium of expression. Multiple entries across different mediums are welcome.',
     },
     {
-        title: 'Implementation',
-        description: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
+        title: 'Evaluation and Judging (August 16 - August 25, 2024)',
+        description: 'After submissions close, artworks will be accessible to the public for viewing and voting online. The public will select their favorite pieces, followed by an expert jury panel evaluating the top-voted entries based on artistic merit, environmental significance, message clarity, and technical proficiency.',
     },
     {
-        title: 'Monitoring and Optimization',
-        description: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
+        title: 'Award Announcement (September 7, 2024)',
+        description: 'Winners will be announced on the International Day of Clean Air for Blue Skies at a ceremony held at the Embassy of the Republic of Azerbaijan. Winners will be notified in advance and invited to the prestigious event to receive their awards.',
     },
-    {
-        title: 'Reporting and Communication',
-        description: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
-    },
-    {
-        title: 'Continual Improvement',
-        description: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
-    },
-
+   
 ];
 
 const Team = [
     {
-        name: 'John Smith',
-        position: 'CEO and Founder',
-        info: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+        name: 'Yared Gebre',
+        position: 'Painter',
+        info: 'Participating with a series of paintings that explore the effects of climate change on natural landscapes. With over 10 years of artistic experience, Yared uses vibrant colors to depict environmental transformations and advocate for sustainability.',
         foto: images.team01,
         linkedin: '#',
     },
     {
-        name: 'Jane Doe',
-        position: 'Director of Operations',
-        info: '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
+        name: 'Desta Girma',
+        position: 'Singer-Songwriter',
+        info: 'Entering the contest with original compositions that address environmental issues through music. With 7+ years in the industry, Desta’s songs blend traditional and modern elements to raise awareness and inspire action for a sustainable future.',
         foto: images.team02,
         linkedin: '#',
     },
     {
-        name: 'Michael Brown',
-        position: 'Senior SEO Specialist',
-        info: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization',
+        name: 'Mekonnen Tadese',
+        position: 'Photographer',
+        info: 'Showcasing a collection of photographs that capture the impact of pollution and habitat destruction. With over 5 years of experience, Mekonnen’s work highlights critical environmental issues and promotes conservation through striking visual storytelling.',
         foto: images.team03,
         linkedin: '#',
     },
-    {
-        name: 'Emily Johnson',
-        position: 'PPC Manager',
-        info: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
-        foto: images.team04,
-        linkedin: '#',
-    },
-    {
-        name: 'Brian Williams',
-        position: 'Social Media Specialist',
-        info: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement',
-        foto: images.team05,
-        linkedin: '#',
-    },
-    {
-        name: 'Sarah Kim',
-        position: 'Content Creator',
-        info: '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries',
-        foto: images.team06,
-        linkedin: '#',
-    },
+    // {
+    //     name: 'Emily Johnson',
+    //     position: 'PPC Manager',
+    //     info: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
+    //     foto: images.team04,
+    //     linkedin: '#',
+    // },
+    // {
+    //     name: 'Brian Williams',
+    //     position: 'Social Media Specialist',
+    //     info: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement',
+    //     foto: images.team05,
+    //     linkedin: '#',
+    // },
+    // {
+    //     name: 'Sarah Kim',
+    //     position: 'Content Creator',
+    //     info: '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries',
+    //     foto: images.team06,
+    //     linkedin: '#',
+    // },
 
 ];
 

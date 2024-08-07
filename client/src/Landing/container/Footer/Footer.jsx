@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="col-md-4 col-12">
           <ul className="info-contact">
             <li> <span>Contact us:</span></li>
-            <li>Email: info@positivus.com</li>
+            <li>Email: info@teguadz.com</li>
             <li>Phone: 555-567-8901</li>
             <li>Address: 1234 Main St
-              Moonstone City, Stardust State 12345</li>
+              Addis Ababa, Ethiopia</li>
           </ul>
         </div>
         <div className="col-md-8 col-12">
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="rights">
-          <p>© 2023 Positivus. All Rights Reserved.</p>
+          <p>© 2024 perspective. All Rights Reserved.</p>
           <p><a href="#" alt="Privacy Policy">Privacy Policy</a></p>
 
         </div>

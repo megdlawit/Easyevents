@@ -9,7 +9,7 @@ import './Services.css';
 const Services = () => {
   return (
     <div id="services" className="d-block pt-md-4">
-      <Headings title="Services" text="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include" />
+      <Headings title="Events" text="Welcome to the Whispers of the Earth Arts Contest, a unique event organized by Teguadz Arts in collaboration with the Embassy of the Republic of Azerbaijan and the Ethiopian Environment Protection Authority. " />
 
       <div className="row">
         {data.ServicesData.map(({ titleone, titletwo , link, itemclass, imgURL }, index) => (
