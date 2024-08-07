@@ -37,8 +37,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         dancerType: {
             type: DataTypes.STRING,
-            allowNull: false,
-            validate: { len: [1, 12] }
+            allowNull: false
         },
         emailSent: {
             type: DataTypes.BOOLEAN,

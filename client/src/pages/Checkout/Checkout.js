@@ -5,8 +5,6 @@ import Navbar from '../Navbar';
 const Checkout = () => {
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');
   const [showOverlay, setShowOverlay] = useState(false);
-  const [receiptFile, setReceiptFile] = useState(null);
-  const [artworkFile, setArtworkFile] = useState(null);
   const [showFileInput, setShowFileInput] = useState(false);
 
   const handlePaymentMethodChange = (event) => {
@@ -24,17 +22,22 @@ const Checkout = () => {
     setShowOverlay(false);
   };
 
-  const handleReceiptFileChange = (event) => {
-    setReceiptFile(event.target.files[0]);
-  };
-
-  const handleArtworkFileChange = (event) => {
-    setArtworkFile(event.target.files[0]);
-  };
-
   const handleProceed = () => {
     setShowOverlay(false);
     window.location.href = 'https://t.me/YourTelegramUser'; // Replace with the actual Telegram user link
+  };
+
+  const renderPaymentDetails = () => {
+    switch (selectedPaymentMethod) {
+      case 'CBE':
+        return <li><strong>CBE:</strong> 1000023456788</li>;
+      case 'Telebirr':
+        return <li><strong>Telebirr:</strong> 1000023456788</li>;
+      case 'Chapa':
+        return <li><strong>Chapa:</strong> 5023456788</li>;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -90,12 +93,9 @@ const Checkout = () => {
                 <h2>Payment Details</h2>
                 <p>For the selected payment method ({selectedPaymentMethod}), please use the following details:</p>
                 <ul>
-                  <li><strong>CBE:</strong> 1000023456788</li>
-                  <li><strong>Telebirr:</strong> 1000023456788</li>
-                  <li><strong>BOA:</strong> 5023456788</li>
+                  {renderPaymentDetails()}
                 </ul>
-
-                <button onClick={handleProceed} className="proceed-button">Proceed</button>
+                <button onClick={handleProceed} className="proceed-button">Attach</button>
               </div>
             </div>
           </div>
