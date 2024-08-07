@@ -16,6 +16,7 @@ import Programs from './pages/Programs';
 import Participants from './pages/Participants';
 import Advert from './pages/Advert';
 import Footer from './pages/Footer';
+import Landing from './Landing/Home'
 
 const App = () => (
   <Router>
@@ -30,7 +31,7 @@ const App = () => (
         <Route path="registration" element={<Registration />} />
         <Route path="checkin" element={<CheckIn />} />
       </Route>
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={<Landing />} />
       <Route path="event/firstregistration" element={<FirstRegistration />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/navbar" element={<Navbar />} />

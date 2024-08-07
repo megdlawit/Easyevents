@@ -27,7 +27,9 @@
     "socket.io-client": "^2.5.0",
     "swiper": "^11.1.7",
     "tailwindcss": "^3.4.7",
-    "timers-browserify": "^2.0.12"
+    "timers-browserify": "^2.0.12",
+     "web-vitals": "^2.1.4",
+     "react-icons": "^4.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
